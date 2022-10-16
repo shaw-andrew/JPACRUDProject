@@ -11,9 +11,11 @@
 <body>
 	<jsp:include page="navbar.jsp" />
 	<main class="container-fluid">
+		
 		<div class="bg-image"
-			style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg'); height: 70vh">
-
+			
+			style="background-image: url('${park.img}'); background-size: cover; position: relative; background-repeat: no-repeat">
+	
 			<div class="container">
 				<div class="row">
 					<div class="col"></div>
@@ -25,10 +27,11 @@
 						<hr>
 						<h6>Located in: ${park.city}</h6>
 
-						<blockquote></blockquote>
+						<blockquote>${park.description }</blockquote>
 						<p>Address: ${park.streetAddress }
 						<p>Rating: ${park.rating }
 						<p>Park ID: ${park.id }</p>
+						
 						<form action="updateOrDelete.do" method="GET">
 							<input type="hidden" name="id" value="${park.id }" /> <input
 								type="submit" value="Update or Delete Park" />

@@ -41,7 +41,7 @@ public class DogParkDAOImpl implements DogParkDAO {
 		if(dp != null) {
 			dp.setName(dogPark.getName());
 			dp.setStreetAddress(dogPark.getStreetAddress());
-			dp.setCity(dogPark.getCity());;
+			dp.setCity(dogPark.getCity());
 			dp.setPostalCode(dogPark.getPostalCode());
 			dp.setRating(dogPark.getRating());
 		}
@@ -50,7 +50,7 @@ public class DogParkDAOImpl implements DogParkDAO {
 
 	@Override
 	public boolean deleteById(int dogParkId) {
-		DogPark dp = em.find(DogPark.class, (dogParkId));
+		DogPark dp = em.find(DogPark.class, dogParkId);
 		em.remove(dp);
 		boolean successfullyRemoved = !em.contains(dp);
 		return successfullyRemoved;

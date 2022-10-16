@@ -26,6 +26,10 @@ public class DogPark {
 	private String postalCode;
 	
 	private int rating;
+	
+	private String description;
+	
+	private String img;
 
 	public DogPark() {
 	}
@@ -76,6 +80,22 @@ public class DogPark {
 
 	public void setRating(int rating) {
 		this.rating = rating;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getImg() {
+		return img;
+	}
+
+	public void setImg(String img) {
+		this.img = img;
 	}
 
 	@Override
