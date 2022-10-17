@@ -12,4 +12,4 @@ This project was similar to last weeks project, however utilizing the Spring Fra
 Java, AWS EC2, SQL, HTML, CSS, Bootstrap, Spring, Git
 
 ## How to run
-The code is all available on Github. I am deploying this project to AWS Monday and will upload a link to view after the deployment is complete.
+The code is all available on Github. It has also been deployed on EC2 at http://52.32.118.35:8080/DogParks/index.do
